@@ -1,0 +1,711 @@
+@charset "utf-8" ;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color: rgb(54, 54, 54);
+    transition: background-color 0.5s, color 0.5s;
+    font-size: 20px;
+}
+
+#content {
+    background-image: url(../images/ha51.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+header{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255,80%);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    align-items: center;
+    font-family: "Bonbon", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+#section1 {
+    padding-top: 0px;
+}
+
+#section1 img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+h4 {
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+section {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.basicProfile {
+    align-self: center;
+    text-align: left;
+}
+
+.basicProfile h2 {
+    margin-top: 0px;
+}
+
+.selfIntroduction {
+    text-align: center;
+    width: 80%;
+    margin:0 auto;
+}
+
+hr {
+    display: inline-block;
+    width: 750px;
+}
+
+.selfIntroduction p, .career p {
+    width: 750px;
+    text-align: left;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 50%);
+    padding: 20px;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+ }
+
+.detail li {
+    text-align: left;
+}
+
+.detailBox ul, ol {
+    display: inline-block;
+    text-align: left;
+}
+
+.detailBox {
+    width: 50%;
+    height: 300px;
+    margin: 30px auto;
+    padding: 40px 40px 40px 70px;
+    text-align: center;
+    align-self: center;
+    line-height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.strongPoints {
+    background-image: url(../images/detail1.png);
+    object-fit: cover;
+}
+
+.cons {
+    background-image: url(../images/detail2.png);
+}
+
+.certification {
+    background-image: url(../images/detail3.png);   
+}
+
+.skill {
+    background-image: url(../images/detail4.png);      
+}
+
+.careerDetail1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.careerDetail1 img {
+    width:300px;
+    height:300px;
+}
+
+.getSkill {
+    max-width: 50%;
+    text-align: left;
+}
+
+.getSkill h3, .careerChange h3 {
+    text-align: left;
+}
+
+.careerDetail2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.careerDetail2 img {
+    width:300px;
+    height:300px;
+}
+
+.careerChange {
+    max-width: 50%;
+    text-align: left;
+}
+
+.work {
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255,85%);
+    width: 80%;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.work img {
+    width: 300px;
+    height:300px;
+    object-fit: cover;
+    object-position: left;
+    border: 3px double #ffefd5;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.work1, .work2, .work3 {
+    display: flex;
+    justify-content: center;
+}
+
+.work2, .work3 img {
+    object-position: center;
+}
+
+.work p {
+    margin: 10px 30px;
+    width: 300px;
+    text-align: left;
+}
+
+.workImg {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    border-radius: 30px;
+    background-color:#ffefd5;
+    padding: 5px;
+}
+
+.pcTaiwan {
+    display: flex;
+    align-items: center;
+}
+.spTaiwan {
+    display: none;
+}
+
+.hobby img {
+    width: 200px;
+    height: 200px;
+}
+
+.form {
+  padding: 24px 0 48px;
+  width: 80%;
+  padding: 20px;
+  background-color: #d5ebd5;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.form1, .form2, .form7{
+  display: flex;
+  margin: 24px 0;
+}
+
+.form9 {
+  display: flex;
+}
+
+.formItem {
+  font-size: 20px;
+  text-align: end;
+  align-self: center;
+  flex-basis: 30%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #fff;
+  background-color: #fff;
+  width: 400px;
+  height: 52px;
+  margin: 0 12px;
+  text-align: start;
+}
+
+.inquiry{
+  height: 208px;
+}
+
+.send {
+  margin: 48px auto 0;
+}
+
+input[type="submit"] {
+  font-size:20px;
+  align-items: center;
+  padding: 5px;
+}
+
+input[type="submit"]:hover {
+  margin-left: 20px;
+  transition-property: margin-left;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  transition-delay: 0ms;
+}
+
+input:focus, .inquiry:focus {
+  background-color: rgba(255, 255, 255, 50%);
+}
+
+.thankyou {
+    display: block;
+    margin: 100px auto;
+}
+
+footer {
+    height: 70px;
+    background-color: rgba(255, 255, 255, 80%);
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* スライダーメニュー */
+
+.sliderContainer {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255,85%);
+    width: 80%;
+    padding: 40px;
+    margin: 40px auto;
+}
+
+.sliderTrack {
+    display: flex;
+    gap: 40px; /* 画像の間隔 */
+    transition: transform 0.5s ease-in-out;
+    margin-left: 155px;
+}
+
+.slide {
+    /* width: 295px; */
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.coloring2 {
+    object-fit: cover;
+    object-position: center center;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 40px;
+}
+
+.dotsWrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #000000;
+}
+
+.sliderContainer img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.toTop {
+    width: 70px;
+    height: 70px;
+    margin: 0px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 70%);
+    border-radius: 50px;
+}
+
+/* スライダーメニューここまで  */
+
+@media screen and (max-width: 767px)
+{
+
+main {
+    width: 100%;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 0 10px 10px;
+    text-align: center;
+    line-height: 15px;
+}
+
+header nav {
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    font-size: 15px;
+}
+
+main {
+    padding: 0px;
+}
+
+section {
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 25px;
+    margin-top: 0px;
+    height: 30px
+}
+
+h2 {
+    font-size: 12px;
+    margin: 10px auto;
+}
+
+h3 {
+    font-size: 10px;
+    margin: 5px auto;
+}
+
+#section1 img {
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.profile {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile img {
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.basicProfile {
+    align-self: flex-start;
+    flex-basis: 50%;
+    line-height: 10px;
+}
+
+.basicProfile dt {
+    font-size: 10px;
+}
+.basicProfile dd {
+    font-size: 10px;
+}
+
+.selfIntroduction {
+    width: 90%;
+}
+
+.selfIntroduction p {
+    font-size: 10px;
+    width: 90%;
+    line-height: 20px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 50%);
+    padding: 20px;
+    margin: 0px auto;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+ }
+
+.detail ul, ol {
+    font-size: 10px;
+}
+
+.detail li {
+    text-align: left;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.detailBox {
+    width: 50%;
+    height: 180px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align: left;
+}
+
+hr {
+    width: 90%;
+}
+
+.career p {
+    font-size: 10px;
+    width: 90%;
+    line-height: 20px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 50%);
+    padding: 20px;
+    margin: 0px auto;
+}
+
+.careerDetail1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.careerDetail1 img{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+}
+
+.getSkill, .careerChange {
+    font-size: 10px;
+    width: 90%;
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.careerDetail2 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.careerDetail2 img {
+    width: 200px;
+    height: 200px;
+}
+
+.careerChange {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.work {
+    width: 90%;
+    padding: 20px 0px;
+    height: 600px;
+}
+
+.work1, .work2, .work3 {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+  
+.work img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    margin: 15px auto;
+}
+
+.work p {
+    font-size: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+}
+
+.link {
+    width: 100px;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.spTaiwan {
+    display: block;
+}
+.pcTaiwan {
+    display: none;
+}
+
+.form {
+    width: 90%;
+    margin:0 auto 50px
+}
+
+.form2, .form7, .form9 {
+    display: block;
+}
+
+.formItem {
+    margin: 0 12px 5px;
+    font-size: 15px;
+    text-align: left;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid #fff;
+    background-color: #fff;
+    width: 95%;
+    height: 30px;
+    margin: 0 12px;
+    text-align: start;
+}
+
+.send {
+    margin: 20px auto 0;
+    border-radius: 30px;
+    width: 100px;
+    background-color: #fff;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.thankyou {
+    display: block;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.sliderTrack {
+    gap: 20px; /* 画像の間隔 */
+    transition: transform 0.5s ease-in-out;
+    margin-left: 20px;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.dotsWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #000000;
+}
+
+.sliderContainer img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+}
