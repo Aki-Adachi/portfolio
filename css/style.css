@@ -16,7 +16,7 @@ body {
 }
 
 #content {
-    background-image: url(../images/ha51.png);
+    background-image: url(../images/background.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -47,6 +47,61 @@ header nav a {
 
 header nav a:hover {
   transform: scale(1.2);
+}
+
+.scroll {
+  height: 150px;
+  position: relative;
+}
+
+.scroll-down_08 {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: serif;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.wavy-text span {
+  position: relative;
+  display: inline-block;
+  animation: wave 2s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+.wavy-text_arrow {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  animation: float 2s infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-20%) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(20%) rotate(-45deg);
+  }
 }
 
 #section1 {
@@ -208,14 +263,14 @@ hr {
 .work {
     border-radius: 50px;
     background-color: rgba(255, 255, 255,85%);
-    width: 80%;
+    max-width: 800px;
     padding: 20px;
     margin: 40px auto;
 }
 
 .work img {
     width: 300px;
-    height:300px;
+    height: 90%;
     object-fit: cover;
     object-position: left;
     border: 3px double #ffefd5;
@@ -249,6 +304,33 @@ hr {
     padding: 5px;
 }
 
+.childtools {
+    display: flex;
+    justify-content: center;
+}
+
+.childtoolsLink {
+    border-radius: 30px;
+    background-color:#ffefd5;
+    padding: 10px;
+    height: 200px;
+    margin: 0px 0px 10px 10px;
+    text-align: center;
+}
+
+.childToolsLink img {
+    width: 100%;
+    height: 70%;
+    object-position: top center;
+    border: none;
+    border-radius: 0;
+    padding: 15px 0 0 0;
+}
+
+.childToolsDetail {
+    text-align: left;
+}
+
 .pcTaiwan {
     display: flex;
     align-items: center;
@@ -264,7 +346,7 @@ hr {
 
 .form {
   padding: 24px 0 48px;
-  width: 80%;
+  max-width: 800px;
   padding: 20px;
   background-color: #d5ebd5;
   margin: 0 auto;
@@ -330,9 +412,12 @@ input:focus, .inquiry:focus {
 }
 
 footer {
-    height: 70px;
+    height: 45px;
     background-color: rgba(255, 255, 255, 80%);
-    padding: 20px;
+    padding: 8px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 
 footer p {
@@ -408,21 +493,17 @@ footer p {
 }
 
 .toTop {
-    width: 70px;
-    height: 70px;
+    width: 40px;
     margin: 0px;
     position: fixed;
     right: 10px;
-    bottom: 70px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 70%);
-    border-radius: 50px;
 }
 
 .sourse {
     display: block;
-    margin: 30px auto;
-    width: 80%;
+    margin: 30px auto 70px;
+    max-width: 800px;
     text-align: center;
     border-radius: 30px;
     background-color:#d5ebd5;
@@ -443,6 +524,12 @@ main {
     line-height: 15px;
 }
 
+#content {
+    background-image: url(../images/SPbackground.png);
+    background-size:contain;
+    background-position: bottom;
+}
+
 header nav {
     justify-content: space-around;
     height: 60px;
@@ -452,6 +539,10 @@ header nav {
 
 main {
     padding: 0px;
+}
+
+.scroll {
+    height: 0px;
 }
 
 section {
@@ -493,6 +584,7 @@ h3 {
 }
 
 .basicProfile {
+    margin: 20px auto;
     align-self: flex-start;
     flex-basis: 50%;
     line-height: 10px;
@@ -609,7 +701,10 @@ hr {
 .work {
     width: 90%;
     padding: 20px 0px;
-    height: 600px;
+}
+
+.workImg {
+    display: block;
 }
 
 .work1, .work2, .work3 {
@@ -627,15 +722,14 @@ hr {
 
 .work p {
     font-size: 10px;
-    margin: 10px;
-    width: 100%;
-    height: 100px;
+    margin: 10px auto;
+    width: 300px;
     text-align: left;
 }
 
 .link {
     width: 100px;
-    display: block;
+    /* display: block; */
     text-align: center;
     margin: 5px auto;
 }
@@ -659,6 +753,29 @@ hr {
 .formItem {
     margin: 0 12px 5px;
     font-size: 15px;
+    text-align: left;
+}
+
+.childToolsLink {
+    height: 120px;
+    font-size: 10px;
+    margin: 5px;
+}
+
+.childToolsLink img {
+    width: 150px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+}
+
+.childToolsDetail p {
+    width: 80%;
+    /* margin: 0 auto; */
+}
+
+.childToolsDetail {
+    width: 200px;
     text-align: left;
 }
 
@@ -724,6 +841,10 @@ input[type="submit"] {
     width: 200px;
     height: 300px;
     object-fit: cover;
+}
+
+.sourse {
+    width: 90%;
 }
 
 }
