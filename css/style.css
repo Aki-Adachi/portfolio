@@ -270,7 +270,7 @@ hr {
 
 .work img {
     width: 300px;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
     object-position: left;
     border: 3px double #ffefd5;
@@ -291,6 +291,8 @@ hr {
     margin: 10px 30px;
     width: 300px;
     text-align: left;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 .workImg {
@@ -314,6 +316,7 @@ hr {
     background-color:#ffefd5;
     padding: 10px;
     height: 200px;
+    width: 350px;
     margin: 0px 0px 10px 10px;
     text-align: center;
 }
@@ -338,6 +341,39 @@ hr {
 .spTaiwan {
     display: none;
 }
+
+
+
+
+.workSection {
+  border: 1px solid #ffefd5;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 0 10px 10px;
+  background-color: rgba(255, 250, 240, 0.6);
+}
+
+.workSection h5 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.links .link {
+    font-size: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+
+
 
 .hobby img {
     width: 200px;
@@ -696,6 +732,7 @@ hr {
 .careerChange {
     font-size: 10px;
     margin-top: 20px;
+    text-align: left;
 }
 
 .work {
@@ -715,6 +752,7 @@ hr {
   
 .work img {
     object-fit: cover;
+    object-position: top left;
     width: 300px;
     height: 300px;
     margin: 15px auto;
@@ -723,8 +761,16 @@ hr {
 .work p {
     font-size: 10px;
     margin: 10px auto;
-    width: 300px;
+    width: 100%;
     text-align: left;
+}
+
+.workSection h5 {
+    font-size: 10px;
+}
+
+.links .link {
+    font-size: 10px;
 }
 
 .link {
@@ -756,10 +802,15 @@ hr {
     text-align: left;
 }
 
+.childtools {
+    display: block;
+}
+
 .childToolsLink {
     height: 120px;
+    width: 85%;
     font-size: 10px;
-    margin: 5px;
+    margin: 5px auto;
 }
 
 .childToolsLink img {
@@ -775,7 +826,6 @@ hr {
 }
 
 .childToolsDetail {
-    width: 200px;
     text-align: left;
 }
 
