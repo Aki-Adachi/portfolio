@@ -16,17 +16,17 @@ window.addEventListener('scroll', function() {
         document.body.style.backgroundColor = '#fff';
         document.body.style.color = 'gray';
     } else if (scrollY >= section2 && scrollY < section3) {
-        document.body.style.backgroundColor = '#F7F3FF';
-        document.body.style.color = '#53425a';
+        document.body.style.backgroundColor = '#fdf1eeff';
+        document.body.style.color = '#1d3819ff';
     } else if (scrollY >= section3 && scrollY < section4) {
-        document.body.style.backgroundColor = '#ccf9ff';
-        document.body.style.color = '#184448';
+        document.body.style.backgroundColor = '#e9ebff';
+        document.body.style.color = '#53556bff';
     } else if (scrollY >= section4 && scrollY < section5) {
         document.body.style.backgroundColor = '#ffefd5';
-        document.body.style.color = '#8e3b14';
+        document.body.style.color = '#a53d0dff';
     } else if (scrollY >= section5) {
         document.body.style.backgroundColor = '#F0FFF0';
-        document.body.style.color = '#333333';
+        document.body.style.color = '#4a7462ff';
     }
 });
 
