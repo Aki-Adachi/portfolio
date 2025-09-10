@@ -548,6 +548,49 @@ footer p {
 
 /* スライダーメニューここまで  */
 
+
+.SVGtools {
+    margin: 10px auto 20px ;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    max-width: 80%;
+}
+
+.SVGtoolLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.SVGtoolCard {
+    background-color: #ffefd5;
+    border-radius: 12px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.SVGtoolCard h5 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #222;
+}
+
+.SVGtoolCard p {
+    margin: 0 auto;
+    font-size: 14px;
+    color: #555;
+}
+
+.SVGtoolCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 @media screen and (max-width: 767px)
 {
 
@@ -737,7 +780,7 @@ hr {
 
 .work {
     width: 90%;
-    padding: 20px 0px;
+    padding: 20px 0px 30px;
 }
 
 .workImg {
@@ -895,6 +938,24 @@ input[type="submit"] {
 
 .sourse {
     width: 90%;
+}
+
+.SVGtoolLinks {
+    flex-direction: column;
+}
+
+.SVGtools {
+    font-size: 10px;
+}
+
+.SVGtoolCard {
+    flex: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.SVGtoolCard h5 {
+    font-size: 12px;
 }
 
 }
